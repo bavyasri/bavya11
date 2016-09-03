@@ -1,0 +1,179 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPageuser.master.cs" Inherits="MasterPageuser" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    
+    <title>TWITTER</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/coin-slider.css" />
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/cufon-aller.js"></script>
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/coin-slider.min.js"></script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="main">
+  <div class="header">
+    <div class="header_resize">
+      <div class="logo">
+        <h1><a href="index.html">REAL-TIME BURSTY TOPIC DETECTION FROM <span>TWITTER</span> </a></h1>
+      </div>
+      <div class="menu_nav">
+        <ul>
+          <li class="active"><a href="home.aspx"><span>Home Page</span></a></li>
+          <li><a href="adminlogin.aspx"><span>ADMIN</span></a></li>
+          <li><a href="userlogin.aspx"><span>USER</span></a></li>
+          </ul>
+      </div>
+      <div class="clr"></div>
+      <div class="slider">
+        <div id="coin-slider"> <a href="#"><img src="images/slide1.jpg" width="960" height="320" alt="" /> </a> <a href="#"><img src="images/slide2.jpg" width="960" height="320" alt="" /> </a> <a href="#"><img src="images/slide3.jpg" width="960" height="320" alt="" /> </a> </div>
+        <div class="clr"></div>
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="content_resize">
+      <div class="mainbar">
+        <div class="article">
+          <div class="clr"></div>
+          <div class="clr"></div>
+        </div>
+        
+        <asp:ContentPlaceHolder id="ContentPlaceHolder3" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+        <div class="article">
+          <h2>Real-Time Bursty Topic</h2>
+          <div class="clr"></div>
+          <div class="img">
+              <asp:Image ID="Image6" runat="server" Height="210px" 
+                  ImageUrl="~/images/images (9).jpg" Width="191px" />
+            </div>
+          <div class="post_content">
+            <p>&nbsp; With 200 million active users and over 400 million tweets per day as in a 
+                recent report 1, Twitter has become one of the largest information portals which 
+                provides an easy, quick and reliable platform for ordinary users to share 
+                anything happening around them with friends and other followers. In particular, 
+                it has been observed that, in life-critical disasters of societal scale, Twitter 
+                is the most important and timely source from which people find out and track the 
+                breaking news before any mainstream media picks up on them and rebroadcast the 
+                footage. For example, in the March 11, 2011 Japan earthquake and subsequent 
+                tsunami, the volume of tweets sent spiked to more than 5,000 per second when 
+                people post news about the situation along with uploads of mobile videos they 
+                had recorded 2. We call such events which trigger a surge of a large number of 
+                relevant tweets “bursty topics”.</p>
+          </div>
+          <div class="clr"></div>
+        </div>
+      </div>
+      <div class="sidebar">
+        <div class="searchform">
+            <span>
+            <input name="editbox_search" class="editbox_search" id="editbox_search" maxlength="80" value="Search our ste:" type="text" />
+            </span>
+            <input name="button_search" src="images/search.gif" class="button_search" type="image" />
+          </div>
+        <div class="clr"></div>
+        <div class="gadget">
+          <h2 class="star"><span>Tweet Server Menu</span></h2>
+          <div class="clr"></div>
+          <ul class="sb_menu">
+            <li><a href="home.aspx">Home</a></li>
+            <li><a href="userregistration.aspx">View my profile</a></li>
+            <li><a href="userlogin.aspx">Current tweet</a></li>
+            <li><a href="#">Create tweet</a></li>
+            <li><a href="#">Search tweet</a></li>
+            <li><a href="#">Search friend and request</a></li>
+            <li><a href="#">Friend request</a></li>
+            <li><a href="#">All my friends</a></li>
+            <li><a href="#">All my tweet with ranks</a></li>
+            <li><a href="#">Log out</a></li>
+            
+           
+          
+          
+          
+          </ul>
+        </div>
+        <div class="gadget">
+          <h2 class="star">Concepts</h2>
+          <div class="clr"></div>
+          <ul class="ex_menu">
+            <li><a href="http://www.dreamtemplate.com/">D</a>imension Reduction<br />
+              </li>
+            <li>Efficient Sketch Maintenance<br />
+              </li>
+            <li>Efficiency Evaluation<br /></li>
+            <li>Effectiveness Evaluation<br />
+              </li>
+              <li>Comparison with twitter trending topic.<br /></li>
+          </ul>
+        </div>
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+  <div class="fbg">
+    <div class="fbg_resize">
+      <div class="col c1">
+        <h2><span>Image</span> Gallery</h2>
+        <a href="#"><img src="images/images.jpg" width="75" height="75" alt="" class="gal" /></a>&nbsp; <asp:Image 
+              ID="Image1" runat="server" ImageUrl="~/images/images (17).jpg" width="75" height="75" alt="" class="gal"/>
+          <asp:Image ID="Image3" runat="server" ImageUrl="~/images/images (4).jpg" width="75" height="75" alt="" class="gal" />
+&nbsp;<asp:Image ID="Image2" runat="server" ImageUrl="~/images/images (18).jpg" width="75" height="75" alt="" class="gal" />
+          <asp:Image ID="Image4" runat="server" ImageUrl="~/images/images (5).jpg" width="75" height="75" alt="" class="gal" />
+&nbsp;<asp:Image ID="Image5" runat="server" ImageUrl="~/images/download (3).jpg" width="75" height="75" alt="" class="gal" />
+&nbsp;
+          </div>
+      <div class="col c2">
+        <h2><span>Solution</span> Overview</h2>
+        <p>Three primary research challanges here are:</p>
+          <p>1.How to identify bursty toopics, i.e what are the keywords of the topic.</p>
+          <p>2.How to detect a bursty topics as early as possible.</p>
+          <p>3. How to perform the task efficiency in large-scale real-time setting as 
+              twitter.</p>
+        <ul class="fbg_ul">
+          <li></li>
+          <li></li>
+            <li>&nbsp;</li>
+        </ul>
+      </div>
+      <div class="col c3">
+        <h2>Project Details</h2>
+          <p>
+              Problem Formulation.</p>
+          <p>
+              Sketch-based topic model.</p>
+          <p>
+              Real-time detection technique.</p>
+          <p>
+              Project Evaluation.</p>
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer_resize">
+      <div style="clear:both;"></div>
+    </div>
+  </div>
+</div>
+  
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
